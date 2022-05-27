@@ -1,0 +1,32 @@
+<html>
+
+    <head>
+        <title>Markdown Image Linker</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="./index.js"></script>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            textarea {
+                width: 240px;
+                height: 60px;
+                font-family: Menlo, Monaco, Consolas, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Consolas, "Courier New", Courier, monospace;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Markdown Image Linker</h1>
+        <div>
+            <div>Image Link:</div>
+            <input id="link">
+            <div>Image Alt:</div>
+            <input id="alt">
+            <button onclick="generateMD()">Generate</button>
+            <div>This is your markdown:</div>
+            <textarea id="markdown" readonly></textarea>
+        </div>
+
+</html>
